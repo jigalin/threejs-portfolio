@@ -122,7 +122,7 @@ scene.add(logobox);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("moon.jpg");
+const moonTexture = new THREE.TextureLoader().load("jupiter.jpg");
 const normalTexture = new THREE.TextureLoader().load("normal.jpg");
 
 const moon = new THREE.Mesh(
@@ -135,12 +135,23 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
+const moonRing = new THREE.Mesh(
+  new THREE.TorusGeometry(4, 0.6, 2, 100),
+  new THREE.MeshStandardMaterial({ wireframe: true })
+);
+
+scene.add(moonRing);
+
 // Extra
 
 //
 
 moon.position.z = 30;
 moon.position.setX(-10);
+
+moonRing.position.z = 30;
+moonRing.position.setX(-10);
+moonRing.rotateX(1.2);
 
 logobox.position.z = -5;
 logobox.position.x = 4;
@@ -156,9 +167,9 @@ pointLight.position.set(-10, 5, 0);
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  moon.rotation.x += 0.05;
-  moon.rotation.y += 0.075;
-  moon.rotation.z += 0.05;
+  // moon.rotation.x += 0.05;
+  // moon.rotation.y += 0.075;
+  // moon.rotation.z += 0.05;
 
   logobox.rotation.y += 0.01;
   logobox.rotation.z += 0.01;
@@ -182,7 +193,7 @@ function animate() {
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.01;
 
-  moon.rotation.x += 0.005;
+  moon.rotation.y += 0.005;
 
   // controls.update();
 
