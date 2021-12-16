@@ -1,6 +1,11 @@
 import "./style.css";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import bg from "./images/bg.jpg";
+import cactus from "./images/cactus.png";
+import jupiter from "./images/jupiter.jpg";
+import normal from "./images/normal.jpg";
+// import psykinetic from "./images/psykinetic.png";
 
 // Setup
 
@@ -106,12 +111,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load("bg.jpg");
+const spaceTexture = new THREE.TextureLoader().load(bg);
 scene.background = spaceTexture;
 
 // Avatar
 
-const logoTexture = new THREE.TextureLoader().load("cactus.png");
+const logoTexture = new THREE.TextureLoader().load(cactus);
 
 const logobox = new THREE.Mesh(
   new THREE.BoxGeometry(2, 2, 2),
@@ -122,8 +127,8 @@ scene.add(logobox);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("jupiter.jpg");
-const normalTexture = new THREE.TextureLoader().load("normal.jpg");
+const moonTexture = new THREE.TextureLoader().load(jupiter);
+const normalTexture = new THREE.TextureLoader().load(normal);
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -137,7 +142,7 @@ scene.add(moon);
 
 const moonRing = new THREE.Mesh(
   new THREE.TorusGeometry(4, 0.6, 2, 100),
-  new THREE.MeshStandardMaterial({ wireframe: true })
+  new THREE.MeshStandardMaterial({ color: 0xff7b00, wireframe: true })
 );
 
 scene.add(moonRing);
