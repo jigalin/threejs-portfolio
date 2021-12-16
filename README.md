@@ -1,7 +1,7 @@
 <div align="center">
   <h1>🪐<br>Three.Js Portfolio</h1>
   <h3>An intro into threejs and vanilla Javascript</h3>
-  <h3><a href="" target="_blank">Preview Coming soon</a></h3>
+  <h3><a href="https://jigalin-threejs-portfolio.netlify.app/" target="_blank">LIVE PREVIEW</a></h3>
 </div>
 
 <div align="center"><img src="" /></div>
