@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Poppins:wght@300;400;500&display=swap");
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.65);
+  --spacing: 450px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Manrope, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h1 {
+  margin-bottom: 0;
+  margin-top: 20px;
+  color: rgb(158, 255, 255);
+}
+
+p {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header {
+  background: none;
+  grid-column: 2 / span 5;
+  font-size: 3rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 5px 40px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 5px 40px 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 50px;
+  background: var(--dark-bg);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  border-radius: 20px;
+}
+
+section p {
+  font-size: 1rem;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 3rem;
+  display: inline;
+  line-height: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.left {
+  grid-column: 6 / 12;
+}
