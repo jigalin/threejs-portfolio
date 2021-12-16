@@ -4,7 +4,7 @@
   <h3><a href="https://jigalin-threejs-portfolio.netlify.app/" target="_blank">LIVE PREVIEW</a></h3>
 </div>
 
-<div align="center"><img src="" /></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/29565530/146315992-b236fc5c-7c08-4924-81f2-c3e52a1a16fe.gif" /></div>
 <div align="center">
   <p>A preview of V1 of the site - basic polygons, shapes and textures.</p>
 </div>
